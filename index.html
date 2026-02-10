@@ -9,15 +9,18 @@
 </head>
 <body>
 <div class="form-container">
-        <h2>Реєстрація (Рівень 2)</h2>
+        <h2>Реєстрація (Фінал)</h2>
         <form action="#" method="POST">
             
             <fieldset>
                 <legend>Особисті дані</legend>
                 
                 <div class="form-group">
-                    <label for="username">Ім'я:</label>
-                    <input type="text" id="username" name="username" required placeholder="Введіть ваше ім'я">
+                    <label for="username">Нікнейм (Login):</label>
+                    <input type="text" id="username" name="username" required 
+                           pattern="[a-zA-Z0-9]+" 
+                           title="Використовуйте тільки латинські літери та цифри без пробілів"
+                           placeholder="user123">
                 </div>
 
                 <div class="form-group">
@@ -26,13 +29,24 @@
                 </div>
 
                 <div class="form-group">
+                    <label for="country">Країна:</label>
+                    <select id="country" name="country" required>
+                        <option value="" disabled selected>Оберіть зі списку...</option>
+                        <option value="ua">Україна</option>
+                        <option value="pl">Польща</option>
+                        <option value="de">Німеччина</option>
+                        <option value="usa">США</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
                     <label>Стать:</label>
                     <div class="radio-group">
                         <input type="radio" id="male" name="gender" value="male" checked>
-                        <label for="male" class="inline-label">Чоловіча</label>
+                        <label for="male" class="inline-label">Чол.</label>
                         
                         <input type="radio" id="female" name="gender" value="female">
-                        <label for="female" class="inline-label">Жіноча</label>
+                        <label for="female" class="inline-label">Жін.</label>
                     </div>
                 </div>
             </fieldset>
@@ -53,9 +67,17 @@
                 </div>
             </fieldset>
 
+            <fieldset>
+                <legend>Додатково</legend>
+                <div class="form-group">
+                    <label for="comment">Про себе (коментар):</label>
+                    <textarea id="comment" name="comment" rows="4" placeholder="Напишіть щось про себе..."></textarea>
+                </div>
+            </fieldset>
+
             <div class="form-group checkbox-group">
                 <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms" class="inline-label">Я погоджуюсь з умовами використання</label>
+                <label for="terms" class="inline-label">Я погоджуюсь з умовами</label>
             </div>
 
             <button type="submit">Зареєструватися</button>

@@ -5,7 +5,7 @@ body {
 }
 
 .form-container {
-    width: 300px;           
+    width: 400px;           
     margin: 50px auto;      
     padding: 20px;          
     background-color: white; 
@@ -51,4 +51,19 @@ button {
 
 button:hover {
     background-color: darkblue;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    display: block;
+    font-family: inherit; 
+}
+
+
+textarea {
+    resize: vertical; 
 }
