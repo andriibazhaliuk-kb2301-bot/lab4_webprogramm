@@ -8,29 +8,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="form-container">
-        <h2>Реєстрація</h2>
+<div class="form-container">
+        <h2>Реєстрація (Рівень 2)</h2>
         <form action="#" method="POST">
             
-            <div class="form-group">
-                <label for="username">Ім'я:</label>
-                <input type="text" id="username" name="username" required placeholder="Введіть ваше ім'я">
-            </div>
+            <fieldset>
+                <legend>Особисті дані</legend>
+                
+                <div class="form-group">
+                    <label for="username">Ім'я:</label>
+                    <input type="text" id="username" name="username" required placeholder="Введіть ваше ім'я">
+                </div>
 
-            <div class="form-group">
-                <label for="email">Електронна пошта:</label>
-                <input type="email" id="email" name="email" required placeholder="example@mail.com">
-            </div>
+                <div class="form-group">
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                </div>
 
-            <div class="form-group">
-                <label for="password">Пароль:</label>
-                <input type="password" id="password" name="password" required placeholder="Введіть пароль">
+                <div class="form-group">
+                    <label>Стать:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="male" class="inline-label">Чоловіча</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female" class="inline-label">Жіноча</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Безпека</legend>
+
+                <div class="form-group">
+                    <label for="password">Пароль (мін. 8 символів):</label>
+                    <input type="password" id="password" name="password" 
+                           minlength="8" required autocomplete="new-password" placeholder="Введіть пароль">
+                </div>
+
+                <div class="form-group">
+                    <label for="password_confirm">Повторіть пароль:</label>
+                    <input type="password" id="password_confirm" name="password_confirm" 
+                           required autocomplete="new-password" placeholder="Повторіть пароль">
+                </div>
+            </fieldset>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms" class="inline-label">Я погоджуюсь з умовами використання</label>
             </div>
 
             <button type="submit">Зареєструватися</button>
         </form>
     </div>
-
+    
 </body>
 </html>
