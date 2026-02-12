@@ -39,18 +39,19 @@ input {
 }
 
 
-button {
+.reg-button {
     width: 100%;          
     padding: 10px;         
-    background-color: blue; 
+    background-color: rgb(255, 51, 0); 
     color: white;          
     border: none;           
     cursor: pointer;        
 }
 
 
-button:hover {
-    background-color: darkblue;
+
+.reg-button:hover {
+    background-color: rgb(255, 208, 0);
 }
 
 textarea {
