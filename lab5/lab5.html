@@ -3,44 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Курс Web-Дизайну</title>
+    <title>Web-Start: CSS Grid Layout</title>
     <link rel="stylesheet" href="lab5.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <h1>WEB-START 2026</h1>
-            <p>Твій перший крок у світ IT</p>
-        </div>
-    </header>
+    <div class="grid-container">
+        
+        <header class="header">
+            <div class="logo">GRID MASTER</div>
+            <nav>
+                <a href="#">Головна</a>
+                <a href="#">Кабінет</a>
+                <a href="#">Вихід</a>
+            </nav>
+        </header>
 
-    <section class="hero-section">
-        <div class="container">
-            <h2>Навчися створювати сайти з нуля</h2>
-            <p>Простий курс для новачків. Мінімум теорії, максимум практики.</p>
-            <a href="#" class="btn">Записатися на курс</a>
-        </div>
-    </section>
-
-    <section class="info-section">
-        <div class="container">
-            <h3>Програма курсу:</h3>
-            <div class="content-box">
-                <p>Ми пройдемо всі етапи створення сторінки:</p>
-                <ul>
-                    <li>Структура HTML5</li>
-                    <li>Основи CSS та стилізації</li>
-                    <li>Робота з шрифтами та кольорами</li>
-                    <li>Блокова модель</li>
-                </ul>
+        <aside class="sidebar">
+            <h3>Меню курсу</h3>
+            <ul>
+                <li><a href="#">Вступ до HTML</a></li>
+                <li><a href="#">Основи CSS</a></li>
+                <li><a href="#">Flexbox vs Grid</a></li>
+                <li><a href="#">JavaScript База</a></li>
+                <li><a href="#">React Старт</a></li>
+            </ul>
+            <div class="ad-block">
+                <p>Тут може бути ваша реклама або важливі оголошення.</p>
             </div>
-        </div>
-    </section>
+        </aside>
 
-    <footer class="main-footer">
-        <p>Студентська робота © 2026</p>
-    </footer>
+        <main class="main-content">
+            <section class="hero-grid">
+                <h1>Вітаємо на курсі CSS Grid!</h1>
+                <p>Цей макет побудовано на двовимірній сітці.</p>
+            </section>
+
+            <h2>Мої уроки</h2>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Урок 1</h3>
+                    <p>Структура Grid</p>
+                    <button>Почати</button>
+                </article>
+                <article class="card">
+                    <h3>Урок 2</h3>
+                    <p>Grid Areas</p>
+                    <button>Почати</button>
+                </article>
+                <article class="card">
+                    <h3>Урок 3</h3>
+                    <p>Gap & Align</p>
+                    <button>Почати</button>
+                </article>
+                <article class="card">
+                    <h3>Урок 4</h3>
+                    <p>Responsive</p>
+                    <button>Почати</button>
+                </article>
+                 <article class="card">
+                    <h3>Урок 5</h3>
+                    <p>Real Layouts</p>
+                    <button>Почати</button>
+                </article>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Grid Layout Practice</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
