@@ -3,72 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web-Start:</title>
+    <title>Web-Start: CSS Grid Layout</title>
     <link rel="stylesheet" href="lab5.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container header-flex">
-            <div class="logo">WEB-START</div>
-            
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Про курс</a></li>
-                    <li><a href="#">Програма</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
+    <div class="grid-container">
+        
+        <header class="header">
+            <div class="logo">GRID MASTER</div>
+            <nav>
+                <a href="#">Головна</a>
+                <a href="#">Кабінет</a>
+                <a href="#">Вихід</a>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-flex">
-                <div class="hero-text">
-                    <h1>Стань веб-розробником</h1>
-                    <p>Адаптивний дизайн, Flexbox та CSS Grid — все це в нашому курсі.</p>
-                    <a href="#" class="btn">Почати навчання</a>
-                </div>
+        <aside class="sidebar">
+            <h3>Меню курсу</h3>
+            <ul>
+                <li><a href="#">Вступ до HTML</a></li>
+                <li><a href="#">Основи CSS</a></li>
+                <li><a href="#">Flexbox vs Grid</a></li>
+                <li><a href="#">JavaScript База</a></li>
+                <li><a href="#">React Старт</a></li>
+            </ul>
+            <div class="ad-block">
+                <p>Тут може бути ваша реклама або важливі оголошення.</p>
             </div>
-        </section>
+        </aside>
 
-        <section class="features">
-            <div class="container">
-                <h2>Що ти вивчиш?</h2>
-                
-                <div class="features-row">
-                    
-                    <div class="feature-card">
-                        <h3>HTML5 Структура</h3>
-                        <p>Правильна семантика та SEO-оптимізація коду.</p>
-                    </div>
+        <main class="main-content">
+            <section class="hero-grid">
+                <h1>Вітаємо на курсі CSS Grid!</h1>
+                <p>Цей макет побудовано на двовимірній сітці.</p>
+            </section>
 
-                    <div class="feature-card">
-                        <h3>CSS3 Flexbox</h3>
-                        <p>Вирівнювання елементів та адаптивні сітки.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <h3>Media Queries</h3>
-                        <p>Сайт буде зручним на телефоні, планшеті та ПК.</p>
-                    </div>
-
-                </div>
+            <h2>Мої уроки</h2>
+            <div class="cards-grid">
+                <article class="card">
+                    <h3>Урок 1</h3>
+                    <p>Структура Grid</p>
+                    <button>Почати</button>
+                </article>
+                <article class="card">
+                    <h3>Урок 2</h3>
+                    <p>Grid Areas</p>
+                    <button>Почати</button>
+                </article>
+                <article class="card">
+                    <h3>Урок 3</h3>
+                    <p>Gap & Align</p>
+                    <button>Почати</button>
+                </article>
+                <article class="card">
+                    <h3>Урок 4</h3>
+                    <p>Responsive</p>
+                    <button>Почати</button>
+                </article>
+                 <article class="card">
+                    <h3>Урок 5</h3>
+                    <p>Real Layouts</p>
+                    <button>Почати</button>
+                </article>
             </div>
-        </section>
-    </main>
+        </main>
 
-    <footer class="main-footer">
-        <div class="container footer-flex">
-            <p>© 2026 Web-Start Course</p>
-            <div class="socials">
-                <a href="#">Instagram</a>
-                <a href="#">Telegram</a>
-            </div>
-        </div>
-    </footer>
+        <footer class="footer">
+            <p>© 2026 Grid Layout Practice</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
