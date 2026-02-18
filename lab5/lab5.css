@@ -8,6 +8,7 @@ body {
 }
 
 
+
 .container {
     width: 80%;
     margin: 0 auto; 
@@ -43,6 +44,7 @@ body {
     margin-bottom: 10px;
 }
 
+
 .btn {
     display: inline-block;
     background: #e8491d;
@@ -76,6 +78,7 @@ body {
 ul {
     margin-left: 20px;
 }
+
 
 .main-footer {
     background-color: #2c3e50;

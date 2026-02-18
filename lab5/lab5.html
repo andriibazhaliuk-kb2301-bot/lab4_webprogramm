@@ -3,43 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Курс Web-Дизайну</title>
+    <title>Web-Start:</title>
     <link rel="stylesheet" href="lab5.css">
 </head>
 <body>
 
     <header class="main-header">
-        <div class="container">
-            <h1>WEB-START 2026</h1>
-            <p>Твій перший крок у світ IT</p>
+        <div class="container header-flex">
+            <div class="logo">WEB-START</div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Головна</a></li>
+                    <li><a href="#">Про курс</a></li>
+                    <li><a href="#">Програма</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="container">
-            <h2>Навчися створювати сайти з нуля</h2>
-            <p>Простий курс для новачків. Мінімум теорії, максимум практики.</p>
-            <a href="#" class="btn">Записатися на курс</a>
-        </div>
-    </section>
-
-    <section class="info-section">
-        <div class="container">
-            <h3>Програма курсу:</h3>
-            <div class="content-box">
-                <p>Ми пройдемо всі етапи створення сторінки:</p>
-                <ul>
-                    <li>Структура HTML5</li>
-                    <li>Основи CSS та стилізації</li>
-                    <li>Робота з шрифтами та кольорами</li>
-                    <li>Блокова модель</li>
-                </ul>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Стань веб-розробником</h1>
+                <p>Використовуємо Flexbox для сучасних макетів</p>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Чому цей курс?</h2>
+                
+                <div class="features-row">
+                    
+                    <div class="feature-card">
+                        <h3>HTML5</h3>
+                        <p>Скелет будь-якого сайту. Навчимося писати семантично правильний код.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>CSS3 Flexbox</h3>
+                        <p>Гнучке позиціювання елементів. Те, що ми робимо прямо зараз.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <h3>Практика</h3>
+                        <p>Реальні завдання та створення власного портфоліо під час навчання.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer class="main-footer">
-        <p>Студентська робота © 2026</p>
+        <div class="container footer-flex">
+            <p>© 2026 Web-Start Course</p>
+            <div class="socials">
+                <span>Instagram</span>
+                <span>Telegram</span>
+            </div>
+        </div>
     </footer>
 
 </body>
